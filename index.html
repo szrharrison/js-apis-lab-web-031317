@@ -3,7 +3,21 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+  <form id="create-a-gist">
+    <label>Personal Token: <input type="text" name="personal_token" id="personalToken"></label>
+    <label>File Name: <input type="text" name="file_name" id="file_name"></label>
+    <label>Description: <input type="text" name="description" id="description"></label>
+    <label>Content: <input type="text" name="content" id="content"></label>
+    <button type="submit">Submit</button>
+  </form>
+  <form id='show-gists'>
+    <label>Username: <input type="text" name="username" id="username"></label>
+    <label>Personal Token: <input type="text" name="personal_token" id="personalToken2"></label>
+    <button>Show Gists</button>
+  </form>
+  <div id="display-gists">
 
+  </div>
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/github_client.js"></script>
 </body>
